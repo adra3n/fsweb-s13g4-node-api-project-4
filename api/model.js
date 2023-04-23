@@ -26,18 +26,23 @@ function insert(user) {
 }
 
 function checkLogin(user) {
-  return (
-    // allUsers.filter(
-    //   (x) => x.kullaniciadi == user.kullaniciadi && x.password == user.password
-    // ).length > 0
+  // allUsers.filter(
+  //   (x) => x.kullaniciadi == user.kullaniciadi && x.password == user.password
+  // ).length > 0
 
-    Boolean(
-      allUsers.find(
-        (x) =>
-          x.kullaniciadi == user.kullaniciadi && x.password == user.password
-      )
-    )
-  )
+  // Boolean(
+  //   allUsers.find(
+  //     (x) =>
+  //       x.kullaniciadi == user.kullaniciadi && x.password == user.password
+  //   )
+  // )
+  let isFinded = null
+  allUsers.forEach((x) => {
+    if (x.kullaniciadi == user.kullaniciadi && user.password && x.password) {
+      isFinded = x
+    }
+  })
+  return isFinded
 }
 
 module.exports = {
