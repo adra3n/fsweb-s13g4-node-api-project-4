@@ -4,7 +4,9 @@
   "description": "Bu challengeda, Heroku'ya _deployable_ olan basit bir Express uygulaması oluşturacaksınız. \r Bu, `package.json` dosyasında uygun bir `start` betiğine sahip olduğu ve port numarasının sabit kodlanmak yerine ortamdan alındığı anlamına gelir. \r Uygulamanızı Heroku'ya dağıtmaktan çekinmeyin, ancak bunun artık ücretsiz bir hizmet olmadığını unutmayın.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index",
+    "start": "node index"
   },
   "keywords": [],
   "author": "",
