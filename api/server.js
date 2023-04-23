@@ -6,7 +6,7 @@ server.use(express.json())
 const userModel = require('./model')
 const middleware = require('./middleware')
 
-server.get('/api/kullanıcılar', (req, res, next) => {
+server.get('/api/kullanicilar', (req, res, next) => {
   try {
     const allUsers = userModel.getAllUsers()
     res.json(allUsers)

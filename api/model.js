@@ -1,9 +1,15 @@
 const { nanoid } = require('nanoid')
+
 const initialUsers = () => {
   return [
     {
       id: 1,
       kullaniciadi: 'sertac',
+      password: 'test',
+    },
+    {
+      id: 2,
+      kullaniciadi: 'deneme',
       password: 'test',
     },
   ]
